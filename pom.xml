@@ -7,7 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>CounterWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
-madarjat
+ssh communication vast on assoed
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
