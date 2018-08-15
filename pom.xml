@@ -7,7 +7,6 @@
   <version>1.0-SNAPSHOT</version>
   <name>CounterWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
-ssh communication vast on assoed
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -17,8 +16,33 @@ ssh communication vast on assoed
     </dependency>
   </dependencies>
   <build>
+  <plugins>
+  <plugin> 
+    	<groupId>org.jacoco</groupId>
+	<artifactId>jacoco-maven-plugin</artifactId>
+	<version>0.5.7.201204190339</version>
+           <configuration>
+             <destFile>target/coverage-reports/jacoco-unit.exec</destFile>
+             <dataFile>target/coverage-reports/jacoco-unit.exec</dataFile>
+            </configuration>
+                <executions>
+                  <execution>  
+                    <id>jacoco-initzler</id>
+                       <goals>
+                          <goal>prepare-agent</goal>
+                             </goals>
+                               </execution>
+                                 <execution>
+                                    <id>jacoco-site</id>
+                                     <phase>package</phase>
+                                   <goals>
+                                       <goal>report</report>
+                                       </goals>
+                                      </execution>
+                                    </executions>
+                                   </plugin>
+                                </plugins>
     <finalName>CounterWebApp</finalName>
   </build>
 </project>
 
-#tu marr ja ja ke salebhai
